@@ -1,3 +1,6 @@
 extends Node
 
-# nothing yet
+onready var message = $Message
+
+func hide_message():
+	message.hide()

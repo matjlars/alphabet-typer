@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/m.mp3-11979164bf94e93d1638c937ca4c1e4b.mp3str"
+
+[deps]
+
+source_file="res://audio/james_earl_jones/m.mp3"
+dest_files=[ "res://.import/m.mp3-11979164bf94e93d1638c937ca4c1e4b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

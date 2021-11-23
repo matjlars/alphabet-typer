@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=55 format=2]
 
 [ext_resource path="res://sprites/a.png" type="Texture" id=1]
 [ext_resource path="res://sprites/b.png" type="Texture" id=2]
@@ -28,11 +28,45 @@
 [ext_resource path="res://sprites/t.png" type="Texture" id=26]
 [ext_resource path="res://scripts/Letters.gd" type="Script" id=27]
 [ext_resource path="res://scripts/Main.gd" type="Script" id=28]
+[ext_resource path="res://audio/james_earl_jones/a.mp3" type="AudioStream" id=29]
+[ext_resource path="res://audio/james_earl_jones/l.mp3" type="AudioStream" id=30]
+[ext_resource path="res://audio/james_earl_jones/b.mp3" type="AudioStream" id=31]
+[ext_resource path="res://audio/james_earl_jones/g.mp3" type="AudioStream" id=32]
+[ext_resource path="res://audio/james_earl_jones/d.mp3" type="AudioStream" id=33]
+[ext_resource path="res://audio/james_earl_jones/h.mp3" type="AudioStream" id=34]
+[ext_resource path="res://audio/james_earl_jones/i.mp3" type="AudioStream" id=35]
+[ext_resource path="res://audio/james_earl_jones/e.mp3" type="AudioStream" id=36]
+[ext_resource path="res://audio/james_earl_jones/j.mp3" type="AudioStream" id=37]
+[ext_resource path="res://audio/james_earl_jones/c.mp3" type="AudioStream" id=38]
+[ext_resource path="res://audio/james_earl_jones/f.mp3" type="AudioStream" id=39]
+[ext_resource path="res://audio/james_earl_jones/k.mp3" type="AudioStream" id=40]
+[ext_resource path="res://audio/james_earl_jones/p.mp3" type="AudioStream" id=41]
+[ext_resource path="res://audio/james_earl_jones/s.mp3" type="AudioStream" id=42]
+[ext_resource path="res://audio/james_earl_jones/u.mp3" type="AudioStream" id=43]
+[ext_resource path="res://audio/james_earl_jones/x.mp3" type="AudioStream" id=44]
+[ext_resource path="res://audio/james_earl_jones/z.mp3" type="AudioStream" id=45]
+[ext_resource path="res://audio/james_earl_jones/w.mp3" type="AudioStream" id=46]
+[ext_resource path="res://audio/james_earl_jones/v.mp3" type="AudioStream" id=47]
+[ext_resource path="res://audio/james_earl_jones/n.mp3" type="AudioStream" id=48]
+[ext_resource path="res://audio/james_earl_jones/q.mp3" type="AudioStream" id=49]
+[ext_resource path="res://audio/james_earl_jones/t.mp3" type="AudioStream" id=50]
+[ext_resource path="res://audio/james_earl_jones/y.mp3" type="AudioStream" id=51]
+[ext_resource path="res://audio/james_earl_jones/r.mp3" type="AudioStream" id=52]
+[ext_resource path="res://audio/james_earl_jones/m.mp3" type="AudioStream" id=53]
+[ext_resource path="res://audio/james_earl_jones/o.mp3" type="AudioStream" id=54]
 
 [node name="Main" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 28 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.196078, 0.258824, 0.537255, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -55,47 +89,102 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Letters/a"]
+stream = ExtResource( 29 )
+
 [node name="b" type="TextureRect" parent="Letters"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 texture = ExtResource( 2 )
 expand = true
 stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Letters/b"]
+stream = ExtResource( 31 )
 
 [node name="c" type="TextureRect" parent="Letters"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 33.9411
+margin_right = 33.9412
 texture = ExtResource( 5 )
 expand = true
 stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Letters/c"]
+stream = ExtResource( 38 )
 
 [node name="d" type="TextureRect" parent="Letters"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 26.87
+margin_right = 26.87
 texture = ExtResource( 4 )
 expand = true
 stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Letters/d"]
+stream = ExtResource( 33 )
 
 [node name="e" type="TextureRect" parent="Letters"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 59.397
+margin_top = 2.82843
+margin_right = 59.397
+margin_bottom = 2.82843
 texture = ExtResource( 6 )
 expand = true
 stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Letters/e"]
+stream = ExtResource( 36 )
 
 [node name="f" type="TextureRect" parent="Letters"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 87.6812
+margin_top = 5.65686
+margin_right = 87.6812
+margin_bottom = 5.65686
 texture = ExtResource( 3 )
 expand = true
 stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Letters/f"]
+stream = ExtResource( 39 )
 
 [node name="g" type="TextureRect" parent="Letters"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = -111.723
+margin_top = -11.3137
+margin_right = -111.723
+margin_bottom = -11.3137
 texture = ExtResource( 15 )
 expand = true
 stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Letters/g"]
+stream = ExtResource( 32 )
 
 [node name="h" type="TextureRect" parent="Letters"]
 anchor_right = 1.0
@@ -103,6 +192,12 @@ anchor_bottom = 1.0
 texture = ExtResource( 12 )
 expand = true
 stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Letters/h"]
+stream = ExtResource( 34 )
 
 [node name="i" type="TextureRect" parent="Letters"]
 anchor_right = 1.0
@@ -110,6 +205,12 @@ anchor_bottom = 1.0
 texture = ExtResource( 24 )
 expand = true
 stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Letters/i"]
+stream = ExtResource( 35 )
 
 [node name="j" type="TextureRect" parent="Letters"]
 anchor_right = 1.0
@@ -117,6 +218,12 @@ anchor_bottom = 1.0
 texture = ExtResource( 16 )
 expand = true
 stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Letters/j"]
+stream = ExtResource( 37 )
 
 [node name="k" type="TextureRect" parent="Letters"]
 anchor_right = 1.0
@@ -124,20 +231,44 @@ anchor_bottom = 1.0
 texture = ExtResource( 25 )
 expand = true
 stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Letters/k"]
+stream = ExtResource( 40 )
 
 [node name="l" type="TextureRect" parent="Letters"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 104.652
+margin_right = 104.652
 texture = ExtResource( 20 )
 expand = true
 stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Letters/l"]
+stream = ExtResource( 30 )
 
 [node name="m" type="TextureRect" parent="Letters"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = -31.1127
+margin_top = -1.41425
+margin_right = -31.1127
+margin_bottom = -1.41425
 texture = ExtResource( 22 )
 expand = true
 stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Letters/m"]
+stream = ExtResource( 53 )
 
 [node name="n" type="TextureRect" parent="Letters"]
 anchor_right = 1.0
@@ -145,69 +276,165 @@ anchor_bottom = 1.0
 texture = ExtResource( 17 )
 expand = true
 stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Letters/n"]
+stream = ExtResource( 48 )
 
 [node name="o" type="TextureRect" parent="Letters"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 79.1959
+margin_top = 2.82843
+margin_right = 79.1959
+margin_bottom = 2.82843
 texture = ExtResource( 7 )
 expand = true
 stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Letters/o"]
+stream = ExtResource( 54 )
 
 [node name="p" type="TextureRect" parent="Letters"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 82.0244
+margin_top = -8.48529
+margin_right = 82.0244
+margin_bottom = -8.48529
 texture = ExtResource( 8 )
 expand = true
 stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Letters/p"]
+stream = ExtResource( 41 )
 
 [node name="q" type="TextureRect" parent="Letters"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 39.598
+margin_top = -12.728
+margin_right = 39.5979
+margin_bottom = -12.728
 texture = ExtResource( 14 )
 expand = true
 stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Letters/q"]
+stream = ExtResource( 49 )
 
 [node name="r" type="TextureRect" parent="Letters"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 76.3676
+margin_top = -9.89948
+margin_right = 76.3676
+margin_bottom = -9.89948
 texture = ExtResource( 18 )
 expand = true
 stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Letters/r"]
+stream = ExtResource( 52 )
 
 [node name="s" type="TextureRect" parent="Letters"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = -59.397
+margin_top = -2.82843
+margin_right = -59.397
+margin_bottom = -2.82843
 texture = ExtResource( 9 )
 expand = true
 stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Letters/s"]
+stream = ExtResource( 42 )
 
 [node name="t" type="TextureRect" parent="Letters"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = -28.2843
+margin_top = 8.48529
+margin_right = -28.2843
+margin_bottom = 8.48529
 texture = ExtResource( 26 )
 expand = true
 stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Letters/t"]
+stream = ExtResource( 50 )
 
 [node name="u" type="TextureRect" parent="Letters"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 43.8406
+margin_top = 1.41425
+margin_right = 43.8406
+margin_bottom = 1.41425
 texture = ExtResource( 19 )
 expand = true
 stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Letters/u"]
+stream = ExtResource( 43 )
 
 [node name="v" type="TextureRect" parent="Letters"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 35.3553
+margin_top = -4.24268
+margin_right = 35.3553
+margin_bottom = -4.24268
 texture = ExtResource( 21 )
 expand = true
 stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Letters/v"]
+stream = ExtResource( 47 )
 
 [node name="w" type="TextureRect" parent="Letters"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 100.409
+margin_top = 1.41418
+margin_right = 100.409
+margin_bottom = 1.41418
 texture = ExtResource( 10 )
 expand = true
 stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Letters/w"]
+stream = ExtResource( 46 )
 
 [node name="x" type="TextureRect" parent="Letters"]
 anchor_right = 1.0
@@ -215,17 +442,57 @@ anchor_bottom = 1.0
 texture = ExtResource( 23 )
 expand = true
 stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Letters/x"]
+stream = ExtResource( 44 )
 
 [node name="y" type="TextureRect" parent="Letters"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = -66.468
+margin_top = 4.24261
+margin_right = -66.468
+margin_bottom = 4.24261
 texture = ExtResource( 11 )
 expand = true
 stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Letters/y"]
+stream = ExtResource( 51 )
 
 [node name="z" type="TextureRect" parent="Letters"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 62.2255
+margin_top = -1.41418
+margin_right = 62.2255
+margin_bottom = -1.41418
 texture = ExtResource( 13 )
 expand = true
 stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Letters/z"]
+stream = ExtResource( 45 )
+
+[node name="Message" type="Label" parent="."]
+margin_left = 343.654
+margin_top = 292.742
+margin_right = 660.654
+margin_bottom = 306.742
+text = "Press any alphabet key to see and hear it.
+
+To quit, press alt-f4.
+
+The voice is James Earl Jones from Sesame Street."
+__meta__ = {
+"_edit_use_anchors_": false
+}

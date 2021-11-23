@@ -18,3 +18,7 @@ func show_letter(letter : String):
 		if current: current.hide()
 		current = letter_node
 		current.show()
+		get_parent().hide_message()
+		
+		var audio = current.get_node_or_null("AudioStreamPlayer")
+		if audio: audio.play()
